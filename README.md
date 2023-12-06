@@ -23,7 +23,7 @@ Follow me on:
 <img src="http://praisehimz.codewizardshq.com/Firstwebsite/images/cwhq.png" id="cwhq" alt="Code Wizards HQ" width="50" height="50"/>
 </a>
 <a href="https://replit.com/@muskbot" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/New_Replit_Logo.svg/1200px-New_Replit_Logo.svg.png" id="replit" alt="Replit" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/New_Replit_Logo.svg/1200px-New_Replit_Logo.svg.png" width="50" height="50" id="replit" alt="Replit" />
 </a>
 
 

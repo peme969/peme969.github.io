@@ -17,7 +17,53 @@ Welcome to my [website](https://peme969.github.io)! Here you could learn more ab
 
 
 Follow me on:
+<style>
+  #cwhq { 
+height: 40px;
+width: 40px;
+border: 4px solid #fff;
+border-radius: 100%;
+margin-top: -1px;
+margin-left: 30px;
+position: absolute;
+cursor: pointer;
+color: black;
+background-color: transparent;
+line-height: 5.1rem;
+-webkit-transition: .3s;
+-moz-transition: .3s;
+-o-transition: .3s;
+-ms-transition: .3s;
+transition: .3s;
+box-shadow: -1px 9px 13px #404040;
+}
+ 
+#cwhq:hover {
+transform: translateY(-10px)}
+#replit { 
+height: 40px;
+width: 40px;
+border: 4px solid #fff;
+border-radius: 100%;
+margin-top: -50px;
+margin-left: 150px;
+position: absolute;
+cursor: pointer;
+color: black;
+background-color: transparent;
+line-height: 5.1rem;
+-webkit-transition: .3s;
+-moz-transition: .3s;
+-o-transition: .3s;
+-ms-transition: .3s;
+transition: .3s;
+box-shadow: -1px 9px 13px #404040;
+}
+ 
+#replit:hover {
+transform: translateY(-10px)}
 
+</style>
 <a target="_blank" href="https://github.com/peme969"><i style="font-size:50px; color: black;" class="fa fa-github"></i></a>
 <a href="https://www.codewizardshq.com/student-spotlight-praise-him" target="_blank">
 <img src="http://praisehimz.codewizardshq.com/Firstwebsite/images/cwhq.png" id="cwhq" alt="Code Wizards HQ" />

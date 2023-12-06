@@ -18,7 +18,7 @@ Welcome to my [website](https://peme969.github.io)! Here you could learn more ab
 
 Follow me on:
 
-<a target="_blank" href="https://github.com/peme969"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" id="cwhq" alt="Code Wizards HQ" width="50" height="50"/>></i></a>
+<a target="_blank" href="https://github.com/peme969"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" id="cwhq" alt="Code Wizards HQ" width="50" height="50"/></a>
 <a href="https://www.codewizardshq.com/student-spotlight-praise-him" target="_blank">
 <img src="http://praisehimz.codewizardshq.com/Firstwebsite/images/cwhq.png" id="cwhq" alt="Code Wizards HQ" width="50" height="50"/>
 </a>

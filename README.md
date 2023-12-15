@@ -1,7 +1,7 @@
 # peme969.github.io
 ## My Github Website
 
-Welcome to my [website](https://peme969.github.io)! Here you could learn more about me!
+Welcome to my [website](https://peme969.is-a.dev)! Here you could learn more about me!
 
 - 👋 I am a 12-year-old christian boy ✝ that loves to code!
 - ⚡ Some things I enjoy during my free time are: 
@@ -30,8 +30,9 @@ Follow me on:
 
 ___________
 
-If you have any questions or better advice, contact me on the [forum](https://forum.codewizardshq.com/u/praisehimz/summary) or [email me](https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=mrcoderpeme@gmail.com)
+If you have any questions or better advice, [email me](https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=mrcoderpeme@gmail.com)
 
 ## PS: I have hosted my websites on other platforms such as:
-* [CWHQ](https://praisehimz.codewizardshq.com)
+* [Carrd](https://peme969.carrd.co)
 * [Infinity Free](https://praisehimz.000.pe)
+* [Glitch](https://peme969.glitch.me)

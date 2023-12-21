@@ -1,4 +1,4 @@
-# peme969.github.io
+# peme969.is-a.dev
 ## My Github Website
 
 Welcome to my [website](https://peme969.is-a.dev)! Here you could learn more about me!
@@ -16,7 +16,7 @@ Welcome to my [website](https://peme969.is-a.dev)! Here you could learn more abo
 - 🙋‍♂️ Hope you have a great day! :D
 
 
-Follow me on:
+Connect:
 
 <a target="_blank" href="https://github.com/peme969"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" id="cwhq" alt="Code Wizards HQ" width="50" height="50"/></a>
 <a href="https://www.codewizardshq.com/student-spotlight-praise-him" target="_blank">
@@ -30,7 +30,4 @@ ___________
 
 If you have any questions or better advice, [email me](https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=mrcoderpeme@gmail.com)
 
-## PS: I have hosted my websites on other platforms such as:
-* [Carrd](https://peme969.carrd.co)
-* [Infinity Free](https://praisehimz.000.pe)
-* [Glitch](https://peme969.glitch.me)
+

@@ -3,18 +3,6 @@
 
 Welcome to my [website](https://peme969.is-a.dev)! Here you could learn more about me!
 
-- 👋 I am a 12-year-old christian boy ✝ that loves to code!
-- ⚡ Some things I enjoy during my free time are: 
-* playing the piano 🎹
-* singing 🎶
-* tech and coding (duh) 👨‍💻
-* reading (alot!) 📚 📖 
-* playing soccer ⚽
-* biking 🚵‍♂️ 🚲
-* Hiking 🥾
-- 🗯 🌟 "If it doesn't work, I just reset" ~Jann Mardenborough
-- 🙋‍♂️ Hope you have a great day! :D
-
 
 Connect:
 

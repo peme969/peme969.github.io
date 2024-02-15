@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
   <div class="top-buttons">
     <button onclick="location.href='https://peme969.is-a.dev'" target="_blank" type="button" class="top-button">Home</button>
@@ -68,13 +66,13 @@
       const messageInput = document.getElementById('message');
 
       if (nameInput.value.trim() === '' || messageInput.value.trim() === '') {
-        alert('Please enter a valid name and message before pressing the submit button!');
+        showNotification('Please enter a valid name and message before pressing the submit button!', { body: "From Praise-Him ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' });
         return;
       }
       var min = 3;
       var max = 100;
       if (nameInput.value.trim().length < min || messageInput.value.trim().length > max) {
-        alert('Please enter a name that is longer than 3 and shorter than 14 and message less than 100 characters!');
+        showNotification('Please enter a name that is longer than 3 and shorter than 14 and message less than 100 characters!', { body: "From Praise-Him ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' });
         return;
       }
       
@@ -82,62 +80,80 @@
           method: 'POST',
           body: new FormData(form)
         })
-        .then(response => alert("Form Sent! I will get to you shortly!"))
+        .then(response => showNotification("Form Sent! I will get to you shortly!", { body: "From Praise-Him ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' }))
         .catch(error => console.error('Error!', error.message));
+    });
+
+    function showNotification(message) {
+      // Check if the browser supports notifications
+      if (!("Notification" in window)) {
+        alert(message);
+      }
+
+      // Check if permission is already granted
+      else if (Notification.permission === "granted") {
+        // If it's okay, create a notification
+        var notification = new Notification(message, { body: "From Praise-Him ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' });
+      }
+
+      // Otherwise, ask for permission
+      else if (Notification.permission !== "denied") {
+        Notification.requestPermission().then(function (permission) {
+          // If the user accepts, create a notification
+          if (permission === "granted") {
+            var notification = new Notification(message, { body: "From Praise-Him ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' });
+          }
+        });
+      }
+    }
+  </script>
+  <script>
+    var myText = document.getElementById("message");
+    var result = document.getElementById("checker");
+    var idk = 100;
+    var miny = 10;
+    var maxy = 100;
+    result.textContent = 0 + "/" + idk;
+
+    myText.addEventListener("input", function () {
+      var textLength = myText.value.length;
+      result.textContent = textLength + "/" + idk;
+
+      if (textLength > maxy) {
+        myText.style.borderColor = "red";
+        result.style.color = "red";
+      } else if (textLength < miny) {
+        myText.style.borderColor = "gray";
+        result.style.color = "gray";
+      } else {
+        myText.style.borderColor = "green";
+        result.style.color = "green";
+      }
     });
   </script>
   <script>
-    
-     
-      var myText = document.getElementById("message");
-      var result = document.getElementById("checker");
-      var idk = 100;
-      var miny = 10;
-      var maxy = 100;
-      result.textContent = 0 + "/" + idk;
+    var nameText = document.getElementById("name");
+    var nameResult = document.getElementById("hi");
+    var limit = 14;
+    var min = 3;
+    var max = 14;
+    nameResult.textContent = 0 + "/" + limit;
 
-myText.addEventListener("input",function(){
-    var textLength = myText.value.length;
-    result.textContent = textLength + "/" + idk;
+    nameText.addEventListener("input", function () {
+      var textLength = nameText.value.length;
+      nameResult.textContent = textLength + "/" + limit;
 
-    if (textLength > maxy) {
-    myText.style.borderColor = "red";
-    result.style.color = "red";
-  } else if (textLength < miny) {
-    myText.style.borderColor = "gray";
-    result.style.color = "gray";
-} else {
-    myText.style.borderColor = "green";
-    result.style.color = "green";
-}
-});
-  </script>
-  <script>
-    
-     
-      var nameText = document.getElementById("name");
-      var nameResult = document.getElementById("hi");
-      var limit = 14;
-      var min = 3;
-      var max = 14;
-      nameResult.textContent = 0 + "/" + limit;
-
-nameText.addEventListener("input",function(){
-    var textLength = nameText.value.length;
-    nameResult.textContent = textLength + "/" + limit;
-
-    if (textLength > max) {
-    nameText.style.borderColor = "red";
-    nameResult.style.color = "red";
-  } else if (textLength < min) {
-    nameText.style.borderColor = "gray";
-    nameResult.style.color = "gray";
-} else {
-    nameText.style.borderColor = "green";
-    nameResult.style.color = "green";
-}
-});
+      if (textLength > max) {
+        nameText.style.borderColor = "red";
+        nameResult.style.color = "red";
+      } else if (textLength < min) {
+        nameText.style.borderColor = "gray";
+        nameResult.style.color = "gray";
+      } else {
+        nameText.style.borderColor = "green";
+        nameResult.style.color = "green";
+      }
+    });
   </script>
 </body>
-
 </html>

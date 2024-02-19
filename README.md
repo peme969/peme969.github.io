@@ -6,7 +6,7 @@ Welcome to my [website](https://peme969.is-a.dev)! Here you could learn more abo
 
 Connect:
 
-<a target="_blank" href="https://github.com/peme969"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" id="cwhq" alt="Code Wizards HQ" width="50" height="50"/></a>
+<a target="_blank" href="https://github.com/peme969"><img width="100" height="100" src="https://img.icons8.com/sf-black/100/github.png" alt="github"/></a>
 <a href="https://replit.com/@muskbot" target="_blank">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/New_Replit_Logo.svg/1200px-New_Replit_Logo.svg.png" width="50" height="50" id="replit" alt="Replit" /></a>
 

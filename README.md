@@ -4,8 +4,8 @@ Welcome to my [website](https://peme969.is-a.dev)! Here you can learn more about
 
 Connect:
 
-[![github](https://peme969.is-a.dev/github.png)](https://github.com/peme969)
-[![Replit](https://peme969.is-a.dev/replit.png)](https://replit.com/@muskbot)
+[![github](github.png)](https://github.com/peme969)
+[![Replit](replit.png)](https://replit.com/@muskbot)
 
 
 

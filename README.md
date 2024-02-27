@@ -4,7 +4,7 @@ Welcome to my [website](https://peme969.is-a.dev)! Here you can learn more about
 
 Connect:
 
-<a href="https://github.com/peme969"><img width="100" height="100" src="github.png"></a>         [![Replit](replit.png)](https://replit.com/@muskbot)
+<a href="https://github.com/peme969" style="text-decoration: none"><img width="100" height="100" src="github.png"></a>         [![Replit](replit.png)](https://replit.com/@muskbot)
 
 
 

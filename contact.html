@@ -83,7 +83,7 @@
       var min = 3;
       var max = 100;
       if (nameInput.value.trim().length < min || messageInput.value.trim().length > max) {
-        showNotification('Please enter a name that is longer than 3 and shorter than 14 and message less than 100 characters!', { body: "From Praise-Him ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' });
+        showNotification('Please enter a name that is longer than 3 and shorter than 14 and message less than 100 characters!', { body: "From Peme969 ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' });
         return;
       }
       
@@ -91,7 +91,7 @@
           method: 'POST',
           body: new FormData(form)
         })
-        .then(response => showNotification("Form Sent! I will get to you shortly!", { body: "From Praise-Him ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' }))
+        .then(response => showNotification("Form Sent! I will get to you shortly!", { body: "From Peme969 ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' }))
         .catch(error => console.error('Error!', error.message));
     });
 
@@ -104,7 +104,7 @@
       // Check if permission is already granted
       else if (Notification.permission === "granted") {
         // If it's okay, create a notification
-        var notification = new Notification(message, { body: "From Praise-Him ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' });
+        var notification = new Notification(message, { body: "From Peme969 ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' });
       }
 
       // Otherwise, ask for permission
@@ -112,7 +112,7 @@
         Notification.requestPermission().then(function (permission) {
           // If the user accepts, create a notification
           if (permission === "granted") {
-            var notification = new Notification(message, { body: "From Praise-Him ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' });
+            var notification = new Notification(message, { body: "From Peme969 ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' });
           }
         });
       }

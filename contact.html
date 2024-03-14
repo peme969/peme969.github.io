@@ -91,7 +91,7 @@
           method: 'POST',
           body: new FormData(form)
         })
-        .then(response => showNotification("Form Sent! I will get to you shortly!", { body: "From Peme969 ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' }))
+        .then(response => showNotification("Form Sent! I will get to you shortly!", { body: "From Peme969 ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' }), console.log("Form Sent!"))
         .catch(error => console.error('Error!', error.message));
     });
 

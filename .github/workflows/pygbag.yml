@@ -1,0 +1,21 @@
+name: pygbag_build
+on: [workflow_dispatch]
+
+
+jobs:
+  build-pygbag:
+    name: Build for Emscripten
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Checkout
+      run: |
+            python3 -m pip install --user --upgrade git+https://github.com/pygame-web/pygbag
+            python3 -m pygbag --git --build $GITHUB_WORKSPACE/main.py
+
+    - name : "Upload to GitHub pages"
+      uses: JamesIves/github-pages-deploy-action@4.1.7
+      with:
+        branch: gh-pages
+        folder: build/web

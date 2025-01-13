@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact me!</title>
+  <!-- Primary Meta Tags -->
+<meta name="title" content="Contact me!" />
+<meta name="description" content="Come here to contact Praise-Him 𝘥𝘪𝘳𝘦𝘤𝘵𝘭𝘺" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://peme969.is-a.dev/contact.html" />
+<meta property="og:title" content="Contact me!" />
+<meta property="og:description" content="Come here to contact Praise-Him 𝘥𝘪𝘳𝘦𝘤𝘵𝘭𝘺" />
+<meta property="og:image" content="https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://peme969.is-a.dev/contact.html" />
+<meta property="twitter:title" content="Contact me!" />
+<meta property="twitter:description" content="Come here to contact Praise-Him 𝘥𝘪𝘳𝘦𝘤𝘵𝘭𝘺" />
+<meta property="twitter:image" content="https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico" />
+
+  <link rel="icon" href="https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico" type="image/x-icon"> 
+  <link rel="stylesheet" href="https://praisehimz.codewizardshq.com/Firstwebsite/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="cba54fb1-f1af-4593-b8c2-2899e4ea5d34" async></script>
+</head>
+<body>
+  <div class="top-buttons">
+    <button onclick="location.href='https://peme969.is-a.dev'" target="_blank" type="button" class="top-button">Home</button>
+    <button onclick="location.href='projects'" target="_blank" type="button" class="top-button">My Projects</button>
+  </div>
+  <div class="contact">
+    <h1 class="contact-title">Contact Me</h1>
+    <p class="contact-description">Include your name and a brief message, and I will get back to you shortly!</p>
+    <form name="contact-us" action="https://script.google.com/macros/s/AKfycbyKc-adliccvveJuFKTv7WGX7BimvsIcSRfTlO0CtAzYhWbZqSmtJG3iJQOxrnv-5D1nA/exec" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name='name' id="name" onfocus="removePlaceholder()" minlength="3" maxlength="17" placeholder="Type name here..." required>
+        <p id="hi"></p>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea name='message' id="message" onfocus="removePlaceholder()" minlength="14" maxlength="100" placeholder="Type message here..." cols="30" rows="5" required></textarea>
+        <p id="checker"></p>
+      </div>
+      <button type="submit" class="btn-submit">Submit</button>
+      <br>
+      <br>
+      <a target="_blank" href="https://github.com/peme969"><img width="100" height="100" src="https://img.icons8.com/sf-black/100/github.png" alt="github" id="github"/></a>
+    </form>
+    <a href="https://replit.com/@muskbot" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/New_Replit_Logo.svg/1200px-New_Replit_Logo.svg.png" id="replit" alt="Replit" />
+    </a>
+  </div>
+
+  <script>
+    function removePlaceholder() {
+      var textarea = document.getElementById('message');
+      var input = document.getElementById('name');
+      if (textarea.value === 'Type message here...') {
+        textarea.value = '';
+      }
+      if (input.value === 'Type name here...') {
+        input.value = '';
+      }
+    }
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyKc-adliccvveJuFKTv7WGX7BimvsIcSRfTlO0CtAzYhWbZqSmtJG3iJQOxrnv-5D1nA/exec';
+    const form = document.forms['contact-us'];
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      // Check if name and message are empty
+      const nameInput = document.getElementById('name');
+      const messageInput = document.getElementById('message');
+      var min = 3;
+      var max = 100;
+      if (nameInput.value.trim().length < min || messageInput.value.trim().length > max) {
+        showNotification('Please enter a name that is longer than 3 and shorter than 14 and message less than 100 characters!', { body: "From Peme969 ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' });
+        return;
+      }
+      
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => showNotification("Form Sent! I will get to you shortly!", { body: "From Peme969 ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' }), console.log("Form Sent!"))
+        .catch(error => console.error('Error!', error.message));
+    });
+
+    function showNotification(message) {
+      // Check if the browser supports notifications
+      if (!("Notification" in window)) {
+        alert(message);
+      }
+
+      // Check if permission is already granted
+      else if (Notification.permission === "granted") {
+        // If it's okay, create a notification
+        var notification = new Notification(message, { body: "From Peme969 ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' });
+      }
+
+      // Otherwise, ask for permission
+      else if (Notification.permission !== "denied") {
+        Notification.requestPermission().then(function (permission) {
+          // If the user accepts, create a notification
+          if (permission === "granted") {
+            var notification = new Notification(message, { body: "From Peme969 ⚡", icon: 'https://praisehimz.codewizardshq.com/Firstwebsite/images/cmd_giphy.ico' });
+          }
+        });
+      }
+    }
+  </script>
+  <script>
+    var myText = document.getElementById("message");
+    var result = document.getElementById("checker");
+    var idk = 100;
+    var miny = 10;
+    var maxy = 100;
+    result.textContent = 0 + "/" + idk;
+
+    myText.addEventListener("input", function () {
+      var textLength = myText.value.length;
+      result.textContent = textLength + "/" + idk;
+
+      if (textLength > maxy) {
+        myText.style.borderColor = "red";
+        result.style.color = "red";
+      } else if (textLength < miny) {
+        myText.style.borderColor = "gray";
+        result.style.color = "gray";
+      } else {
+        myText.style.borderColor = "green";
+        result.style.color = "green";
+      }
+    });
+  </script>
+  <script>
+    var nameText = document.getElementById("name");
+    var nameResult = document.getElementById("hi");
+    var limit = 14;
+    var min = 3;
+    var max = 14;
+    nameResult.textContent = 0 + "/" + limit;
+
+    nameText.addEventListener("input", function () {
+      var textLength = nameText.value.length;
+      nameResult.textContent = textLength + "/" + limit;
+
+      if (textLength > max) {
+        nameText.style.borderColor = "red";
+        nameResult.style.color = "red";
+      } else if (textLength < min) {
+        nameText.style.borderColor = "gray";
+        nameResult.style.color = "gray";
+      } else {
+        nameText.style.borderColor = "green";
+        nameResult.style.color = "green";
+      }
+    });
+  </script>
+</body>
+</html>

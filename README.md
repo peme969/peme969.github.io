@@ -11,6 +11,6 @@ Connect:
 
 ___________
 
-If you have any questions or better advice, [email me](https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=mrcoderpeme@gmail.com)
+If you have any questions or better advice, [email me](https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=hello@peme969.is-a.dev)
 
 
